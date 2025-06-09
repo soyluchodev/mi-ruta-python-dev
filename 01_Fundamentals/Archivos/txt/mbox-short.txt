@@ -1,0 +1,11 @@
+﻿El rápido zorro marrón salta sobre el perro perezoso. Este es un ejemplo clásico de pangrama en inglés, que contiene todas las letras del alfabeto. 
+
+En Python, podemos manipular archivos de texto de manera sencilla. Por ejemplo, abrir un archivo, leer su contenido y realizar operaciones como contar palabras, líneas o caracteres. 
+
+Las pruebas son esenciales en el desarrollo de software. Nos ayudan a asegurar que nuestro código funciona correctamente y a detectar errores temprano. 
+
+Este texto tiene varias líneas y párrafos para probar funciones como:
+- Lectura línea por línea.
+- Conteo de palabras.
+- Búsqueda de patrones.
+- Manipulación de strings.
