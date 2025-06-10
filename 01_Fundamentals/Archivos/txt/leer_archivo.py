@@ -11,7 +11,7 @@ contador = 0
 for linea in archivo:
     contador += 1
 print("Contador de líneas:", contador)
-# Salida: 683 (cantidad de líneas del archivo)
+# Salida: 11 (cantidad de líneas del archivo)
 
 # 🔹 Leer todo el contenido del archivo con read()
 archivo = open('mbox-short.txt', 'r')
@@ -26,7 +26,7 @@ for linea in archivo:
         print(linea)
 
 
-# 🔹 Leer todo el contenido con read() usando with
-with open('mbox-short.txt', 'r') as archivo:
+# 🔹 Leer todo el contenido con read() usando with / agregado para encoding= 'UTF-8' que se vea bien en consola
+with open('mbox-short.txt', 'r', encoding= 'UTF-8') as archivo:
     contenido = archivo.read()
 print(contenido)
