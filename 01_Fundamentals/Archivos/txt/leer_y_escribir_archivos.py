@@ -7,3 +7,14 @@ with open('archivoprueba.txt', 'r', encoding='UTF-8') as f:
 with open('archivoprueba.txt', 'r', encoding='UTF-8') as f:
     primera_linea = f.readline()
     print(primera_linea)  # 'Primera línea del archivo\n'
+
+#.strip(): elimina espacios en blanco y saltos de línea
+
+linea = "  Hola mundo \n"
+print(linea.strip())  # → "Hola mundo"
+
+
+#.split(): divide una cadena en partes (por defecto, en espacios)
+
+frase = "Python es genial"
+print(frase.split())  # → ['Python', 'es', 'genial']
