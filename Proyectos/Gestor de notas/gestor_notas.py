@@ -32,18 +32,28 @@ def buscar_por_fechas():
         if not encontradas:
             print("No se encontraron notas con esa fecha.")
 
-
-# 📝 Flujo inicial simple: agregar una nota, mostrar últimas, y buscar por fecha
-entrada = input('Introduce tu nota: ')
-escribir(entrada)
-ver_notas()
-buscar_por_fechas()
-
-
-# 📋 Menú de opciones (en construcción)
+# 📋 Menú de opciones
 def menu():
     print("\n📚 Este es tu gestor de notas 📒🥸")
-    print("01 - Agregar nota")
-    print("02 - Ver últimas 10 notas")
-    print("03 - Buscar notas por fecha")
-    print("04 - Salir")
+    print("1 - Agregar nota")
+    print("2 - Ver últimas 10 notas")
+    print("3 - Buscar notas por fecha")
+    print("4 - Salir")
+    
+    while True:
+        opcion = input("Elige una opcion: ")
+        if opcion == '1':
+            entrada = input('Introduce tu nota: ')
+            escribir(entrada)
+        elif opcion == '2':
+            ver_notas()
+        elif opcion == '3':
+            buscar_por_fechas()
+        elif opcion == '4':
+            print("Hasta luego!")
+            input("\nPresiona Enter para cerrar el programa...")
+            break
+        else:
+            print("Por favor selecciona una opcion valida.")
+
+menu()
