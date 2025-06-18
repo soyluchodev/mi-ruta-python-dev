@@ -13,6 +13,15 @@ Proyecto simple en Python para gestionar un inventario de productos utilizando d
 
 ---
 
+
+📁 Estructura del proyecto
+
+```
+inventario basico/
+├── inventario_basico.py
+└── READNE.md 
+```
+
 ## 🧠 Conceptos aplicados
 
 - Diccionarios (`dict`)
