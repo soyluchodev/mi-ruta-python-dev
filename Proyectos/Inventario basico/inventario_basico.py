@@ -43,13 +43,25 @@ def mostrar_producto():
 
 # Función vacía para buscar productos por nombre (en desarrollo)
 def buscar_por_nombre():
-    pass
+    buscar_producto = input('\nIngresa nombre del producto: ').strip()
+    encontrado = False
+    for producto in inventario:
+        nombre = producto['producto'].capitalize()  # Capitaliza el nombre del producto
+        cantidad = producto['cantidad']
+        precio = producto['precio']
+        if producto['producto'].lower() ==  buscar_producto.lower():
+            print(f'Producto: {nombre} | Cantidad: {cantidad} | Precio: {precio}€')
+            encontrado = True
+            break
+    if not encontrado:
+        print('Producto no encontrado.')
 
 # Bucle principal del programa
 while True:
     print("1 - Agregar otro producto")
     print("2 - Mostrar productos")  
-    print("3 - Salir") 
+    print("3 - Buscar producto por nombre")
+    print("4 - Salir") 
     opcion = input('Elige una opcion: ')
     
     if opcion == '1':
@@ -57,6 +69,8 @@ while True:
     elif opcion == '2':
         mostrar_producto()
     elif opcion == '3':
+        buscar_por_nombre()
+    elif opcion == '4':
         break 
 
 input('Presiona Enter para terminar')

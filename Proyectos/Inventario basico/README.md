@@ -36,18 +36,23 @@ inventario basico/
 
 ## 💻 Cómo funciona
 
-1. El programa muestra un menú con tres opciones:
+. El programa muestra un menú con las siguientes opciones:
    - Agregar producto
    - Mostrar productos
+   - Buscar producto por nombre
    - Salir
-2. Si el usuario elige **"Agregar producto"**:
-   - Pide nombre, cantidad y precio del producto.
-   - Verifica que la cantidad sea un número entero y el precio un número flotante.
-   - Guarda cada producto como un diccionario.
-   - Agrega el diccionario a una lista (`inventario`).
-3. Si elige **"Mostrar productos"**, muestra todos los productos registrados con formato.
-4. Si elige **"Salir"**, termina el programa.
 
+2. Si el usuario elige **"Agregar producto"**:
+   - Se solicita nombre, cantidad y precio del producto.
+   - Se valida que la cantidad sea un número entero y el precio un número decimal.
+   - Se guarda el producto en un diccionario.
+   - El producto se agrega a la lista `inventario`.
+
+3. Si elige **"Mostrar productos"**, se listan todos los productos registrados.
+
+4. Si elige **"Buscar producto por nombre"**: se lista el producto nombrado
+
+5. Si elige **"Salir"**, el programa termina.
 ---
 
 ## 📌 Ejemplo de uso
@@ -55,22 +60,33 @@ inventario basico/
 ```bash
 1 - Agregar otro producto
 2 - Mostrar productos
-3 - Salir
+3 - Buscar producto por nombre
+4 - Salir
 Elige una opcion: 1
-Ingresa el nombre del producto: Mouse
+Ingresa el nombre del producto: Manzana
 Ingresa la cantidad: 10
-Ingresa el precio del producto: 25.99
+Ingresa el precio del producto: 1.99
 Producto agregado al inventario con éxito
 
 1 - Agregar otro producto
 2 - Mostrar productos
-3 - Salir
+3 - Buscar producto por nombre
+4 - Salir
 Elige una opcion: 2
-Producto: Mouse | Cantidad: 10 | Precio:  2.22€
+Producto: Manzana | Cantidad: 10 | Precio: 1.99€
 
 1 - Agregar otro producto
 2 - Mostrar productos
-3 - Salir
+3 - Buscar producto por nombre
+4 - Salir
 Elige una opcion: 3
+Ingresa nombre del producto: mouse
+Producto: Mouse | Cantidad: 10 | Precio: 25.99€
+
+1 - Agregar otro producto
+2 - Mostrar productos
+3 - Buscar producto por nombre
+4 - Salir
+Elige una opcion: 4
 
 Presiona Enter para terminar
