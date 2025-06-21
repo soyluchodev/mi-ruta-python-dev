@@ -10,6 +10,7 @@ Proyecto simple en Python para gestionar un inventario de productos utilizando d
 - Capturar datos usando `input()` y validarlos.
 - Estructurar datos en una lista de diccionarios.
 - Implementar control de errores con `try-except`.
+- Utilizar archivos json para guardar datos
 
 ---
 
@@ -44,9 +45,10 @@ inventario basico/
 
 2. Si el usuario elige **"Agregar producto"**:
    - Se solicita nombre, cantidad y precio del producto.
-   - Se valida que la cantidad sea un número entero y el precio un número decimal.
+   - Se valida que la cantidad sea un número y el precio un número.
    - Se guarda el producto en un diccionario.
    - El producto se agrega a la lista `inventario`.
+   - Se crea si no existe un archivo json.
 
 3. Si elige **"Mostrar productos"**, se listan todos los productos registrados.
 
