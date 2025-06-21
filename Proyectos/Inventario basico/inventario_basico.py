@@ -1,5 +1,17 @@
-﻿# Lista para almacenar todos los productos del inventario
+﻿#importamos el modulo json
+import json
+
+
+# Lista para almacenar todos los productos del inventario
 inventario = []
+
+
+# cargamos el archivo si existe, cargamos su contenido y lo guardamos en la variable inventario
+try:
+    with open('inventario.json', 'r') as f:  
+        inventario = json.load(f)
+except FileNotFoundError:
+    print('No hay ningun archivo')
 
 # Función para agregar un nuevo producto al inventario
 def agregar_producto():
@@ -7,10 +19,10 @@ def agregar_producto():
 
     # Solicita el nombre del producto al usuario
     nombre_producto = input('Ingresa el nombre del producto: ')
-    # Bucle para asegurarse de que la cantidad ingresada sea un número entero
+    # Bucle para asegurarse de que la cantidad ingresada sea un número decimal
     while True:
         try:
-            cantidad_producto = int(input('Ingresa la cantidad: '))
+            cantidad_producto = float(input('Ingresa la cantidad: '))
             break
         except ValueError:
             print("Error: Debes ingresar un número entero válido para la cantidad.")
@@ -32,6 +44,9 @@ def agregar_producto():
     # Agrega el diccionario del producto a la lista del inventario
     inventario.append(nuevo_producto)
     print('Producto agregado al inventario con éxito')
+    
+    with open('inventario.json', 'w') as f:
+        json.dump(inventario, f, indent= 3)
 
 # Función para mostrar todos los productos almacenados en el inventario
 def mostrar_producto():
