@@ -1,0 +1,17 @@
+[
+   {
+      "producto": "mouse",
+      "cantidad": 5.0,
+      "precio": 5.99
+   },
+   {
+      "producto": "teclado",
+      "cantidad": 8.0,
+      "precio": 8.99
+   },
+   {
+      "producto": "monitor HP",
+      "cantidad": 6.0,
+      "precio": 175.99
+   }
+]

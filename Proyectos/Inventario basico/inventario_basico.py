@@ -56,7 +56,7 @@ def mostrar_producto():
         precio = producto['precio']
         print(f'Producto: {nombre} | Cantidad: {cantidad} | Precio: {precio}€')
 
-# Función vacía para buscar productos por nombre (en desarrollo)
+# Función vacía para buscar productos por nombre
 def buscar_por_nombre():
     buscar_producto = input('\nIngresa nombre del producto: ').strip()
     encontrado = False
@@ -71,12 +71,30 @@ def buscar_por_nombre():
     if not encontrado:
         print('Producto no encontrado.')
 
+#Función para eliminar producto por nombre
+def eliminar_producto():
+    nombre_producto = input('\nIngresa nombre del producto a eliminar: ').strip().lower()
+    encontrado = False
+    for i, producto in enumerate(inventario):
+        if producto['producto'].lower() == nombre_producto:
+            del inventario[i]
+            encontrado = True
+            print('Producto eliminado con exito.')
+            with open('inventario.json', 'w') as f:
+                json.dump(inventario, f, indent=3)
+            break
+    if not encontrado:
+        print('Producto no encontrado.')
+
+
+
 # Bucle principal del programa
 while True:
     print("1 - Agregar otro producto")
     print("2 - Mostrar productos")  
     print("3 - Buscar producto por nombre")
-    print("4 - Salir") 
+    print("4 - Eliminar producto")
+    print("5 - Salir") 
     opcion = input('Elige una opcion: ')
     
     if opcion == '1':
@@ -86,6 +104,8 @@ while True:
     elif opcion == '3':
         buscar_por_nombre()
     elif opcion == '4':
-        break 
+        eliminar_producto()
+    elif opcion == '5':
+        break
 
 input('Presiona Enter para terminar')
