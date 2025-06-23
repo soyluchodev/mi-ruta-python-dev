@@ -7,3 +7,6 @@
 ## 📚 Diccionarios en Python  
 - 📘 [El Libro de Python – Diccionarios (español)](https://ellibrodepython.com/diccionarios-en-python)  
 - 📗 [W3Schools – Python Dictionaries (inglés)](https://www.w3schools.com/python/python_dictionaries.asp)  
+
+## 🚀 Desarrollo web con Flask
+- 🌐 [Flask – Documentación oficial (español)](https://flask.palletsprojects.com/es/stable/quickstart/#a-minimal-application)
