@@ -6,6 +6,8 @@ data = {
     "Ciudad": ["Madrid", "Barcelona", "Sevilla"]
 }
 
+#Usamos pd.DataFrame(...) para convertir el diccionario en un DataFrame, que es una tabla de Pandas.
+
 df = pd.DataFrame(data)
 
 print(df)
