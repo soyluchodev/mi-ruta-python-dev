@@ -10,3 +10,8 @@
 
 ## 🚀 Desarrollo web con Flask
 - 🌐 [Flask – Documentación oficial (español)](https://flask.palletsprojects.com/es/stable/quickstart/#a-minimal-application)
+
+## 🐼 Pandas (Análisis de datos)
+- 📗 [W3Schools – Pandas Tutorial](https://www.w3schools.com/python/pandas/default.asp) *(inglés, pero genail, va bien con el traductor)*
+- 🌐 [Documentación oficial de Pandas](https://pandas.pydata.org/docs/) *(inglés)*  
+- 📙 [10 minutes to pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html) *(guía rápida, inglés)*  
