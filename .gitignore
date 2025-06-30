@@ -1,0 +1,11 @@
+﻿# Ignorar carpetas de Jupyter y archivos temporales
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Ignorar archivos de entorno virtual
+env/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
