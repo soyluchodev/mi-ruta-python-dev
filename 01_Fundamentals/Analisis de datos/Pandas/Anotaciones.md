@@ -31,14 +31,39 @@ colores
 3    Amarillo
 4       Negro
 dtype: object
-````
+```
 
 ## Import Pandas
 
 **No hace falta importar pandas en cada recuadro de texto del notebook jupyter. Si se pone al principio. siempre y cuando no se reinicie el kernel o se cierre vs code. El kernel es el que almacena las variables importaciones y todo, asi que con hacerlo una vez al principio se puede trabajar**
 
+## Head ()
+
+```python
+#Ejercicio 5 de Series
+numeros = pd.Series([23,35,2,78,54,98,17,69,48])
+numeros
+numeros.head()  # Muestra los primeros 5 elementos de la serie 'numeros'
+numeros.head(3) #especificamos valor para el parametro. osea nos da los primeros 3
+```
 
 
+## tail()
 
+```python
+#Ejercicio 5 de Series
+numeros = pd.Series([23,35,2,78,54,98,17,69,48])
+numeros.tail()   # Muestra los últimos 5 elementos de la serie 'numeros'
+numeros.tail(3)  # Muestra los últimos 3 elementos de la serie 'numeros'
+```
 
+## serie.sort_values
+
+```python
+#Ejercicio 5 de Series
+numeros = pd.Series([23,35,2,78,54,98,17,69,48])
+numeros.sort_values()  # Ordena la serie 'numeros' de menor a mayor
+numeros.sort_values(ascending=False)  # Ordena la serie 'numeros' de mayor a menor
+numeros.sort_values(ascending=True)  # Ordena la serie 'numeros' de menor a mayor (equivalente a sort_values())
+```
 
